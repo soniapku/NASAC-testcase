@@ -5,6 +5,7 @@
 #include <stdlib.h> // bad: redundant include
 #include <string.h> // bad: redundant include
 
+// just a test function
 void test_function_A() {
 	printf("A\n");
 }

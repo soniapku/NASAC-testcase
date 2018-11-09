@@ -2,11 +2,11 @@
 
 int check(int number) // bad: need necessary annotation
 {
-    int i, isPrime = 1;
+    int index, isPrime = 1;
 
-    for(i = 2; i <= number/2; ++i)
+    for(index = 2; index <= number/2; ++index)
     {
-        if(number % i == 0)
+        if(number % index == 0)
         {
             isPrime = 0;
             break;
@@ -16,23 +16,23 @@ int check(int number) // bad: need necessary annotation
     return isPrime;
 }
 
-int main() // bad: need necessary annotation
+int main()
 {
-    int number, i, flag = 0;
+    int number, index, flag = 0;
 
     printf("Enter a positive integer: ");
     scanf("%d", &number);
 
-    for(i = 2; i <= number/2; ++i)
+    for(index = 2; index <= number/2; ++index)
     {
-        // condition for i to be a prime number
-        if (check(i) == 1)
+        // condition for index to be a prime number
+        if (check(index) == 1)
         {
-            // condition for number-i to be a prime number
-            if (check(number-i) == 1)
+            // condition for number-index to be a prime number
+            if (check(number-index) == 1)
             {
                 // number = primeNumber1 + primeNumber2
-                printf("%d = %d + %d\n", number, i, number - i);
+                printf("%d = %d + %d\n", number, index, number - index);
                 flag = 1;
             }
 

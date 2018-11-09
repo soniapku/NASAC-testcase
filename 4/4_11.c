@@ -16,6 +16,9 @@ void main()
     printf("%d %d %d\n", exponent, power(2, exponent), power(-3, exponent));
 }
 
+// function for the product of multiplying number's base
+// input: base: integer; exponent: integer
+// output: the product of multiplying number's base
 int power(int base,int number)
 {
   //good correct word concatenation

@@ -11,10 +11,17 @@ int main()
     return 0;
 }
 
+// user-defined function to reverse a sentence
+// Input: none
+// Output: none
 void reverseSentence()
 {
     char c;
-    scanf("%c", &c);
+    if (scanf("%c", &c) != 1)
+    {
+      printf("input error.\n");
+      return;
+    }
 
     if( c != '\n')
     {

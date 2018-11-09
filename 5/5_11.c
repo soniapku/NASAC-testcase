@@ -3,11 +3,11 @@
 // bad: comments should be above the function declaration, not on the right
 int checkPrime(int number) // Function to check prime number
 {                          // Input: a positive integer
-    int i, isPrime = 1;
+    int index, isPrime = 1;
 
-    for(i = 2; i <= number/2; ++i)
+    for(index = 2; index <= number/2; ++index)
     {
-        if(number % i == 0)
+        if(number % index == 0)
         {
             isPrime = 0;
             break;
@@ -22,21 +22,21 @@ int main()                 // Function to check whether a number can be expresse
 {                          // Input: a positive integer
                            // Output: if there is a solution, print it
                            //         otherwise, print the notice
-    int number, i, flag = 0;
+    int number, index, flag = 0;
 
     printf("Enter a positive integer: ");
     scanf("%d", &number);
 
-    for(i = 2; i <= number/2; ++i)
+    for(index = 2; index <= number/2; ++index)
     {
-        // condition for i to be a prime number
-        if (checkPrime(i) == 1)
+        // condition for index to be a prime number
+        if (checkPrime(index) == 1)
         {
-            // condition for number-i to be a prime number
-            if (checkPrime(number-i) == 1)
+            // condition for number-index to be a prime number
+            if (checkPrime(number-index) == 1)
             {
                 // number = primeNumber1 + primeNumber2
-                printf("%d = %d + %d\n", number, i, number - i);
+                printf("%d = %d + %d\n", number, index, number - index);
                 flag = 1;
             }
 

@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+// just a test function
 void test_function_A() {
 	printf("A\n");
 	test_function_B();

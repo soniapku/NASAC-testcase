@@ -15,6 +15,9 @@ void main()
     printf("%d %d %d\n", exponent, mi(2, exponent), mi(-3, exponent));
 }
 
+// function for the product of multiplying number's base
+// input: base: integer; exponent: integer
+// output: the product of multiplying number's base
 int mi(int base,int number) 
 {
   int exponent, product;

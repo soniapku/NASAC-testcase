@@ -7,8 +7,11 @@ int main()
     int number1,number2,quotient;
 
     printf("Enters two numbers: ");
-    scanf("%d %d",&number1,&number2);
-   
+    if (scanf("%d %d",&number1,&number2) != 2)
+    {   
+      printf("input error.\n"); 
+      return 0;
+    }
     // bad: caller should verify all paramters
     if (number2 == 0)
     {
@@ -22,6 +25,10 @@ int main()
     return 0;
 }
 
+
+// user-defined function to divide number from the other
+// Input: divident; divisor
+// Output: quotient: integer
 int divideNumbers(int divident,int divisor)           
 {
     int result;

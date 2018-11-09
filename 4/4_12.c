@@ -2,7 +2,7 @@
 // of enum in C 
 #include<stdio.h> 
   
-enum wk{Mon, Tue, Wed, Thur, Fri, liu, Sun};  // bad: Chinese Pinyin
+enum wk{Mon, Tue, Wed, Thur, Fri, liu, Sun};  // bad ET is abbreviation
 
 int main() 
 { 

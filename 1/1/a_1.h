@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "b_1.h"
 
-
+// just a test function
 void test_function_A() {
 	printf("A\n");
 	test_function_B();
